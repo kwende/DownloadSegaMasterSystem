@@ -55,10 +55,10 @@ namespace DoIt
 
                         string downloadUrl = $"https://edgeemu.net/{part}";
 
-                        string archive = $"D:/sega/{name}"; 
+                        string archive = $"E:/sega/{name}"; 
                         wc.DownloadFile(downloadUrl, archive);
 
-                        ZipFile.ExtractToDirectory(archive, "D:/sega");
+                        ZipFile.ExtractToDirectory(archive, "E:/sega");
 
                         using (var md5 = MD5.Create())
                         {
